@@ -1,0 +1,64 @@
+* {
+  font-family: "roboto";
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 62px;
+  background-color: rgb(222, 54, 54);
+}
+
+.promo {
+  height: 870px;
+  background-color: rgb(44, 212, 123);
+}
+
+.icecream {
+  height: 400px;
+  background-color: rgb(212, 181, 44);
+}
+
+.about {
+  height: 550px;
+  background-color: rgb(58, 44, 212);
+}
+
+.map {
+  height: 430px;
+  background-color: rgb(212, 44, 184);
+}
+
+.footer {
+  height: 135px;
+  background-color: rgb(212, 44, 44);
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url(/fonts/web/roboto.woff) format("woff"), url(/fonts/web/roboto.woff2) format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "robotobold";
+  src: url(/fonts/web/robotobold.woff) format("woff"), url(/fonts/web/robotobold.woff2) format("woff2");
+  font-weight: 700;
+}/*# sourceMappingURL=style.css.map */
