@@ -1,4 +1,53 @@
 .header {
+    position: absolute;
     height: 62px;
-    background-color: rgb(222, 54, 54);
+    width: 100%;
+    top: 10px;
+    &_flex {
+        display: flex;
+        align-items: center;
+        
+    }
+    &_ul {
+        display: flex;
+        padding-inline-start: 0;
+        list-style-type: none;
+        width: 100%;
+        
+        &_li {
+            margin-left: 24px;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1.13;
+            text-align: left;
+            color: #fff;
+        }
+    }
+    &_search {
+        width: 33px;
+        height: 33px;
+        border-radius: 100em; 
+        border: none;
+        opacity: 0.2;
+        background-color: #fff;
+        background-image: url(/img/Лупа.png);
+        &:hover {
+            width: 100px;
+            height: 33px;
+            margin-left: 10px;
+            align-items: center;
+            border: 2px solid transparent;
+            border-radius: 100em;    
+            display: flex;
+            font-weight: 600;
+            position: relative;
+            transition: 0.2s ease;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.14;
+            text-align: right;
+            color: #fff;
+
+        }
+    }
 }
