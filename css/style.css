@@ -197,7 +197,40 @@ img {
 
 .icecream {
   height: 400px;
-  background-color: rgb(212, 181, 44);
+}
+.icecream_flex {
+  display: flex;
+  justify-content: space-between;
+  height: 400px;
+}
+.icecream_item {
+  position: relative;
+  width: 267px;
+  margin-top: 40px;
+}
+.icecream_item_hit::after {
+  content: "";
+  background-image: url(/img/ХИТ.png);
+}
+.icecream_item_price {
+  position: absolute;
+  text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 45px;
+  text-align: left;
+  color: #fff;
+  top: 160px;
+}
+.icecream_item_price span {
+  font-size: 25px;
+}
+.icecream_item_p {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 21.5px;
+  text-align: center;
+  color: #fff;
 }
 
 .about {
