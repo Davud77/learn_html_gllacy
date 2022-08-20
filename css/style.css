@@ -7,6 +7,7 @@ html, body {
   margin: 0px;
   padding: 0px;
   position: relative;
+  background-color: #849d8f;
 }
 
 a {
@@ -25,10 +26,9 @@ img {
 }
 
 .header {
-  position: absolute;
+  margin-top: 10px;
   height: 62px;
   width: 100%;
-  top: 10px;
 }
 .header_flex {
   display: flex;
@@ -89,21 +89,110 @@ img {
   line-height: 1.14;
   text-align: center;
   color: #fff;
+  cursor: pointer;
 }
 .button_href {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 80px;
+  margin-left: 0;
 }
 .button_icon {
   color: #fff;
   margin-right: 8px;
+  margin-left: 0;
+}
+.button_red {
+  width: 280px;
+  height: 64px;
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  margin-left: 0;
+}
+.button_item {
+  position: relative;
+  left: 0;
+  margin-left: 0;
+  margin-top: 15px;
+  width: auto;
+  padding: 0 20px;
+  height: 46px;
+  opacity: 0.99;
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  font-size: 18.5px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 24.5px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
 }
 
 .promo {
-  height: 870px;
-  background-color: rgb(44, 212, 123);
+  height: 650px;
+}
+.promo_bg {
+  position: absolute;
+  background-image: url(/img/Мороженко\ 1.png);
+}
+.promo_p {
+  position: absolute;
+  top: 80px;
+  right: 0px;
+}
+.promo_p_time {
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 16px;
+  letter-spacing: normal;
+  text-align: right;
+  color: #fff;
+}
+.promo_p_phone {
+  margin-top: 8px;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: normal;
+  text-align: right;
+  color: #fff;
+}
+.promo_title {
+  position: absolute;
+  transform: translateX(-50%);
+  top: 400px;
+  left: 50%;
+  width: 700px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 59.5px;
+  font-weight: bold;
+  line-height: 60.5px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+.promo_button {
+  position: absolute;
+  top: 560px;
+  transform: translateX(-50%);
+  left: 50%;
 }
 
 .icecream {
@@ -124,6 +213,48 @@ img {
 .footer {
   height: 135px;
   background-color: rgb(212, 44, 44);
+}
+
+.card {
+  height: 230px;
+}
+.card_advanced {
+  width: 1140px;
+  display: flex;
+  justify-content: space-between;
+}
+.card_advanced_item {
+  text-align: right;
+  width: 560px;
+  height: 229px;
+  background-color: rgba(255, 255, 255, 0.166);
+  border-radius: 15px;
+}
+.card_advanced_item_title {
+  margin: 20px;
+  font-size: 35px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 41px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+.card_advanced_item_subtitle {
+  margin: 0 20px;
+  font-size: 18.5px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 21.5px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+.card_advanced_item_button {
+  text-align: right;
+  margin: 0 20px;
 }
 
 @font-face {

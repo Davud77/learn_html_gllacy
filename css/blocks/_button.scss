@@ -1,5 +1,4 @@
 .button {
-    
     width: 120px;
     height: 33px;
     margin-left: 10px;
@@ -12,14 +11,54 @@
     line-height: 1.14;
     text-align: center;
     color: #fff;
+    cursor: pointer;
     &_href {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 80px;
+        margin-left: 0;
     }
     &_icon {
         color: #fff;
         margin-right: 8px;
+        margin-left: 0;
+    }
+    &_red {
+        width: 280px;
+        height: 64px;
+        box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+        background-image: linear-gradient(to top, #e74a35, #f26843);
+        
+        text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+        font-size: 32px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.36;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+        margin-left: 0;
+    }
+    &_item {
+        position: relative;
+        left: 0;
+        margin-left: 0;
+        margin-top: 15px;
+        width: auto;
+        padding: 0 20px;
+        height: 46px;
+        opacity: 0.99;
+        box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+        background-image: linear-gradient(to top, #e74a35, #f26843);
+        font-size: 18.5px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 24.5px;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
     }
 }

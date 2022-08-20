@@ -1,4 +1,56 @@
 .promo {
-    height: 870px;
-    background-color: rgb(44, 212, 123);
+    height: 650px;
+    
+    &_bg {
+        position: absolute;
+        background-image: url(/img/Мороженко\ 1.png);
+    }
+    &_p {
+        position: absolute;
+        top: 80px;
+        right: 0px;
+        &_time {
+            
+            font-size: 14px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 16px;
+            letter-spacing: normal;
+            text-align: right;
+            color: #fff;
+        }
+        &_phone {
+            margin-top: 8px;
+            font-size: 22px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 24px;
+            letter-spacing: normal;
+            text-align: right;
+            color: #fff;
+        }
+    }
+    &_title {
+        position: absolute;
+        transform: translateX(-50%);
+        top: 400px;
+        left: 50%;
+        width: 700px;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 59.5px;
+        font-weight: bold;
+        line-height: 60.5px;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff; 
+    }
+    &_button {
+        position: absolute;
+        top: 560px;
+        transform: translateX(-50%);
+        left: 50%;
+    }
 }
