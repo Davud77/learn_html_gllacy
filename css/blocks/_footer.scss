@@ -1,4 +1,65 @@
 .footer {
     height: 135px;
-    background-color: rgb(212, 44, 44);
+    &_flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 135px;
+    }
+    &_social {
+        display: flex;
+        justify-content: space-between;
+        width: 190px;
+        &_item {
+            position: relative;
+            width: 38px;
+            height: 38px;
+            
+            
+        }
+        &_icon {
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 4px solid;
+            border-radius: 50%;
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+    }
+    &_link {
+        width: 330px;
+        &_ul {
+            
+            display: flex;
+            justify-content: space-between;
+            padding-inline-start: 0;
+            list-style-type: none;
+            flex-wrap: wrap;
+            
+        }
+        &_li {
+            margin-top: 5px;
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 18px;
+            text-align: left;
+            color: #fff;
+            text-decoration: underline;
+            &:hover {
+                font-weight: bold;
+                list-style-image: url(/svg/heart.svg);
+            }
+        }
+    }
+    &_license {
+        
+        font-size: 12px;
+        line-height: 18px;
+        text-align: left;
+        color: #fefefe;
+    }
 }
