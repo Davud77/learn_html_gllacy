@@ -14,7 +14,7 @@
             <ul class="header_ul">
                 <li class="header_ul_li"><a href="#">Каталог</a> </li>
                 <li class="header_ul_li"><a href="#">Доставка и оплата</a></li>
-                <li class="header_ul_li"><a href="#">О Компании</a></li>
+                <li class="header_ul_li"><a href="#about_whois"">О Компании</a></li>
             </ul>
             <input class="header_search" type="text">
             <button class="button header_button">
@@ -38,12 +38,12 @@
             <div class="promo_bg"></div>
             <div class="promo_p">
                 <div class="promo_p_time">С 10 до 20, ежедневно</div>
-                <div class="promo_p_phone">8 812 450-25-25</div>
+                <div class="promo_p_phone"><a href="tel:+78124502525">8 812 450-25-25</a> </div>
             </div>
             <h1 class="promo_title">Крем-брюле и пломбир <br>
                 с малиновым джемом</h1>
         
-            <button class="button button_red promo_button">Давайте оба!</button>
+            <button class="button button_red promo_button"><a href="#">Давайте оба!</a> </button>
             
         </div>
      </section>
@@ -51,17 +51,17 @@
         <div class="container header_flex">
             
             <div class="card_advanced">
-                <div class="card_advanced_item">
+                <div class="card_advanced_item card_raspberry">
                     <h2 class="card_advanced_item_title">Малинка даром!</h2>
                     <p class="card_advanced_item_subtitle">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
                     </p>
-                    <button class="button button_item card_advanced_item_button">Хочу варенье!</button>
+                    <button class="button button_item card_raspberry_item_button"><a href="#">Хочу варенье!</a></button>
                 </div>
-                <div class="card_advanced_item">
+                <div class="card_advanced_item card_chocolate">
                     <h2 class="card_advanced_item_title">Шоколадки даром!</h2>
                     <p class="card_advanced_item_subtitle">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
                     </p>
-                    <button class="button button_item card_advanced_item_button">Хочу шоколадки!
+                    <button class="button button_item card_chocolate_item_button"><a href="#">Хочу шоколадки!</a>
                     </button>
                 </div>
             </div>
@@ -69,39 +69,42 @@
      </section>
      <section class="icecream">
         <div class="container icecream_flex">
-            <div class="icecream_item">
+            <a href="#"><div class="icecream_item">
                 <div class="icecream_item_hit"></div>
                 <img src="/img/1.png" alt="" class="icecream_item_photo">
                 <h3 class="icecream_item_price">310₽<span>/кг</span> </h3>
                 <p class="icecream_item_p">Сливочное с апельсиновым <br> джемом и цитрусовой стружкой
                 </p>
-            </div>
-            <div class="icecream_item">
+            </div></a>
+            <a href="#"><div class="icecream_item">
                 <div class="icecream_item_hit"></div>
                 <img src="/img/2.png" alt="" class="icecream_item_photo">
                 <h3 class="icecream_item_price">380₽<span>/кг</span> </h3>
                 <p class="icecream_item_p">Сливочно-кофейное с <br> кусочками шоколада
                 </p>
-            </div>
-            <div class="icecream_item">
+            </div></a>
+            <a href="#"><div class="icecream_item">
                 <div class="icecream_item_hit"></div>
                 <img src="/img/3.png" alt="" class="icecream_item_photo">
                 <h3 class="icecream_item_price">355₽<span>/кг</span> </h3>
                 <p class="icecream_item_p">Сливочно-клубничное с <br> присыпкой из белого шоколада
                 </p>
-            </div>
-            <div class="icecream_item">
+            </div></a>
+            <a href="#"><div class="icecream_item">
                 <div class="icecream_item_hit"></div>
                 <img src="/img/4.png" alt="" class="icecream_item_photo">
                 <h3 class="icecream_item_price">415₽<span>/кг</span> </h3>
                 <p class="icecream_item_p">Сливочное крем-брюле с <br> карамельной подливкой
                 </p>
-            </div>
+            </div></a>
+            
+            
+            
         </div>
      </section>
      <section class="about">
         <div class="container about_flex">
-            <div class="about_whois">
+            <div class="about_whois" id="about_whois">
                 <div class="about_whois_title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</div>
                 <div class="about_whois_content">
                     <div class="about_whois_item">
@@ -133,14 +136,17 @@
             </div>
             <div class="about_blog">
                 <div class="about_blog_title">Новое в нашем блоге</div>
-                <div class="about_blog_subtitle">10 способов сервировки <br>
+                <div class="about_blog_subtitle"><a href="#">10 способов сервировки <br>
                     фруктовых щербетов к <br>
-                    столу</div>
+                    столу</a>
+                    </div>
             </div>
             <div class="about_mail">
+                <div class="about_mail_bc"></div>
                 <p class="about_mail_p">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-                <input class="about_mail_input" type="text">
-                <button class="button about_mail_button">Отправить</button>
+                <input class="about_mail_input" type="email" name="subscribe-email" placeholder="Электронная почта" required="">
+                
+                <button class="button about_mail_button"><a href="#">Отправить</a></button>
             </div>
         </div>
      </section>
@@ -153,9 +159,9 @@
                     </div>
                 <div class="map_box_adr">ул. Большая Конюшенная <br> 19/8, Санкт-Петербург</div>
                 <div class="map_box_phonetitle">Для заказов по телефону:</div>
-                <div class="map_box_phone">8 812 450-25-25</div>
+                <div class="map_box_phone"><a href="tel:+78124502525">8 812 450-25-25</a></div>
                 <div class="map_box_subphone">(с 10 до 20 ежедневно)</div>
-                <button class="button map_button">Форма обратной связи</button>
+                <button class="button map_button"><a href="#"> Форма обратной связи</a></button>
             </div>
 
         </div>

@@ -26,9 +26,11 @@ img {
 }
 
 .header {
+  position: relative;
   margin-top: 10px;
   height: 62px;
   width: 100%;
+  z-index: 1;
 }
 .header_flex {
   display: flex;
@@ -42,38 +44,50 @@ img {
   width: 100%;
 }
 .header_ul_li {
-  margin-left: 24px;
   font-size: 16px;
+  padding: 0 10px;
+  height: 33px;
   font-weight: bold;
-  line-height: 1.13;
-  text-align: left;
+  margin-left: 10px;
+  align-items: center;
+  line-height: 2;
+  text-align: center;
   color: #fff;
+  cursor: pointer;
+}
+.header_ul_li:hover {
+  padding: 0 10px;
+  height: 33px;
+  margin-left: 10px;
+  align-items: center;
+  background: linear-gradient(to top, #f26843, #e74a35);
+  border: none;
+  border-radius: 100em;
+  transition: 0.2s ease;
+  line-height: 2;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
 }
 .header_search {
   width: 33px;
   height: 33px;
   border-radius: 100em;
   border: none;
-  opacity: 0.2;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
   background-image: url(/img/Лупа.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .header_search:hover {
-  width: 100px;
+  width: 350px;
   height: 33px;
-  margin-left: 10px;
-  align-items: center;
-  border: 2px solid transparent;
   border-radius: 100em;
-  display: flex;
-  font-weight: 600;
-  position: relative;
   transition: 0.2s ease;
   font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  text-align: right;
-  color: #fff;
+  color: rgb(0, 0, 0);
+  background-color: #fff;
+  padding: 0 15px;
 }
 
 .button {
@@ -90,6 +104,11 @@ img {
   text-align: center;
   color: #fff;
   cursor: pointer;
+  transition: all 0.3s;
+}
+.button:hover {
+  font-weight: bold;
+  background: linear-gradient(to top, #f26843, #e74a35);
 }
 .button_href {
   display: flex;
@@ -111,10 +130,7 @@ img {
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
   font-size: 32px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.36;
-  letter-spacing: normal;
   text-align: center;
   color: #fff;
   margin-left: 0;
@@ -132,12 +148,12 @@ img {
   background-image: linear-gradient(to top, #e74a35, #f26843);
   font-size: 18.5px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 24.5px;
-  letter-spacing: normal;
   text-align: center;
   color: #fff;
+}
+.button_text {
+  font-weight: bold;
 }
 
 .promo {
@@ -145,11 +161,17 @@ img {
 }
 .promo_bg {
   position: absolute;
+  z-index: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -70px;
+  width: 92%;
+  height: 800px;
   background-image: url(/img/Мороженко\ 1.png);
 }
 .promo_p {
   position: absolute;
-  top: 80px;
+  top: 0;
   right: 0px;
 }
 .promo_p_time {
@@ -190,7 +212,7 @@ img {
 }
 .promo_button {
   position: absolute;
-  top: 560px;
+  top: 550px;
   transform: translateX(-50%);
   left: 50%;
 }
@@ -202,15 +224,30 @@ img {
   display: flex;
   justify-content: space-between;
   height: 400px;
+  align-items: center;
 }
 .icecream_item {
   position: relative;
   width: 267px;
   margin-top: 40px;
+  transition: all 0.3s;
+}
+.icecream_item:hover {
+  background-color: rgba(255, 255, 255, 0.166);
+  border-radius: 15px;
+  padding: 15px;
 }
 .icecream_item_hit::after {
   content: "";
-  background-image: url(/img/ХИТ.png);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/sprite.png);
+  background-position: 0 0;
+  width: 61px;
+  height: 61px;
+  z-index: 10;
 }
 .icecream_item_price {
   position: absolute;
@@ -234,6 +271,7 @@ img {
 }
 
 .about {
+  margin-top: 20px;
   height: 600px;
 }
 .about_flex {
@@ -246,6 +284,7 @@ img {
   width: 1146px;
   height: 306px;
   border-radius: 15px;
+  background-image: url(/img/Вафля\ фон.png);
 }
 .about_whois_title {
   font-size: 24px;
@@ -289,6 +328,7 @@ img {
   height: 220px;
   border-radius: 15px;
   margin-top: 40px;
+  background-image: url(/img/Клубничный\ фон.png);
 }
 .about_blog_title {
   font-size: 16px;
@@ -307,14 +347,30 @@ img {
   margin: 0 25px;
   text-decoration: underline;
 }
+.about_blog a {
+  color: #323232;
+}
 .about_mail {
+  position: relative;
   background-color: #fff;
   width: 560px;
   height: 220px;
   border-radius: 15px;
   margin-top: 40px;
+  background-image: url(/img/Почтовый-фон.png);
+}
+.about_mail_bc {
+  margin: 7px;
+  position: absolute;
+  z-index: 0;
+  width: 546px;
+  height: 206px;
+  border-radius: 15px;
+  background-color: #f8f7f4;
 }
 .about_mail_p {
+  position: relative;
+  z-index: 1;
   font-size: 16px;
   font-style: normal;
   line-height: 22px;
@@ -323,19 +379,35 @@ img {
   margin: 30px;
 }
 .about_mail_input {
+  position: relative;
+  z-index: 1;
   width: 350px;
   height: 44px;
-  border-radius: 5px;
-  border: solid 1px rgba(178, 178, 178, 0.52);
   background-color: #fff;
   margin-top: 10px;
   margin-left: 30px;
+  box-sizing: border-box;
+  padding: 9px 15px;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 700;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+  outline: none;
 }
 .about_mail_button {
+  position: relative;
+  z-index: 1;
   width: 130px;
   height: 44px;
   box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
   background-image: linear-gradient(to top, #e74a35, #f26843);
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  text-align: center;
+  color: #fefefe;
 }
 
 .map {
@@ -385,6 +457,9 @@ img {
   font-weight: bold;
   line-height: 22px;
   text-align: left;
+  color: #323232;
+}
+.map_box_phone a {
   color: #323232;
 }
 .map_box_subphone {
@@ -472,12 +547,32 @@ img {
 .card {
   height: 230px;
 }
+.card_raspberry {
+  background-image: url(/img/Малиновый\ фон.png);
+}
+.card_raspberry_item_button {
+  text-align: right;
+  margin: 20px;
+  width: 162px;
+}
+.card_chocolate {
+  background-image: url(/img/Шоколадный\ фон.png);
+}
+.card_chocolate_item_button {
+  text-align: right;
+  margin: 20px;
+  width: 190px;
+}
 .card_advanced {
   width: 1140px;
   display: flex;
   justify-content: space-between;
 }
 .card_advanced_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
   text-align: right;
   width: 560px;
   height: 229px;
@@ -485,13 +580,11 @@ img {
   border-radius: 15px;
 }
 .card_advanced_item_title {
-  margin: 20px;
+  width: 520px;
+  margin: 20px 20px 0;
   font-size: 35px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 41px;
-  letter-spacing: normal;
   text-align: left;
   color: #fff;
 }
@@ -499,16 +592,9 @@ img {
   margin: 0 20px;
   font-size: 18.5px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 21.5px;
-  letter-spacing: normal;
   text-align: left;
   color: #fff;
-}
-.card_advanced_item_button {
-  text-align: right;
-  margin: 0 20px;
 }
 
 @font-face {

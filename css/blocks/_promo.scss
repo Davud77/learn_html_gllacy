@@ -2,12 +2,20 @@
     height: 650px;
     
     &_bg {
+        
         position: absolute;
+        z-index: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -70px;
+        width: 92%;
+        height: 800px;
         background-image: url(/img/Мороженко\ 1.png);
+        
     }
     &_p {
         position: absolute;
-        top: 80px;
+        top: 0;
         right: 0px;
         &_time {
             
@@ -49,7 +57,7 @@
     }
     &_button {
         position: absolute;
-        top: 560px;
+        top: 550px;
         transform: translateX(-50%);
         left: 50%;
     }
