@@ -4,6 +4,14 @@
     height: 62px;
     width: 100%;
     z-index: 1;
+    transition: all 0.3s;
+    &_logo {
+        width: 160px;
+        img {
+            width: 160px;
+        }
+        
+    }
     &_flex {
         display: flex;
         align-items: center;
@@ -11,9 +19,10 @@
     }
     &_ul {
         display: flex;
+        justify-content: center;
         padding-inline-start: 0;
         list-style-type: none;
-        width: 100%;
+        width: 420px;
         
         &_li {
             font-size: 16px;
@@ -44,6 +53,7 @@
         }
     }
     &_search {
+        margin-left: auto;
         width: 33px;
         height: 33px;
         border-radius: 100em; 
@@ -53,7 +63,7 @@
         background-repeat: no-repeat;
         background-position: center;
         &:hover {
-            width: 350px;
+            width: 200px;
             height: 33px;
             border-radius: 100em;    
             transition: 0.2s ease;
@@ -63,4 +73,5 @@
             padding: 0 15px;
         }
     }
+    
 }

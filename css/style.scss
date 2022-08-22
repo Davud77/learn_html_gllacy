@@ -15,9 +15,7 @@ a {
     color: #fff;
 }
 
-img {
-    max-width: 100%;
-}
+
 
 .container {
     position: relative;
@@ -35,7 +33,7 @@ img {
 @import 'blocks/map';
 @import 'blocks/footer';
 @import 'blocks/card';
-
+@import 'blocks/filter';
 
 
 @font-face {

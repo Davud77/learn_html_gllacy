@@ -1,16 +1,20 @@
 .icecream {
-    height: 400px;
+    &_catalog {
+        height: 1140px;
+    }
     &_flex {
         display: flex;
         justify-content: space-between;
         height: 400px;
         align-items: center;
+        flex-wrap: wrap;
+        margin-top: 15px;
     }
     &_item {
         position: relative;
         width: 267px;
-        margin-top: 40px;
         transition: all 0.3s;
+        padding: 15px 0;
         &:hover {
             background-color: rgba(255, 255, 255, 0.166);
             border-radius: 15px;
@@ -53,4 +57,42 @@
 
         
     }
+    &_list {
+        &_before {
+            a {
+            color: rgba(255, 255, 255, 0.4);
+            cursor:auto;
+        } 
+        }
+        &_body {
+            display: flex;
+            padding-inline-start: 0;
+            list-style-type: none;
+            margin: 0 5px;
+        }
+        &_item {
+            margin: 5px;
+            width: 27px;
+            height: 26px;
+            border-radius: 100%;
+            align-items: center;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 26px;
+            background-color: rgba(255, 255, 255, 0);
+            color: #fff;
+            &:hover, &_active, {
+                background-color: rgba(255, 255, 255, 0.2);
+                color: #000;
+            }
+            
+        }
+        &_flex {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    }
+
 }
